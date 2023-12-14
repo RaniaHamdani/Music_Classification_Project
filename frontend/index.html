@@ -1,0 +1,24 @@
+c<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet Nouvelles Architectures - Classification des Genres de Musique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Projet Nouvelles Architectures - Classification des Genres de Musique</h1>
+    <div class="upload-section">
+      <input type="file" id="audioFile" accept=".wav" class="file-input">
+      <label for="audioFile" class="custom-file-upload">Choisir un fichier WAV</label>
+    </div>
+    <div class="buttons">
+      <button onclick="predictWithSVM()" class="svm-button">Prédiction avec SVM</button>
+      <button onclick="predictWithVGG19()" class="vgg19-button">Prédiction avec VGG19</button>
+    </div>
+    <p id="predictionResult" class="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
