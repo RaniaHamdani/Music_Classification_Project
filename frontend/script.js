@@ -15,7 +15,7 @@ function predictWithSVM() {
       const data = { audio: base64Audio };
   
       // Replace 'backend_ip_address' and 'backend_port' with the actual values
-      fetch('http://backend_ip_address:backend_port/predict_SVM', {
+      fetch('http://10.20.3.140:5000/predict_SVM', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ function predictWithSVM() {
 
   // Replace 'vgg19_backend_container_ip' with the actual IP address of your VGG19 backend container
   // and 'vgg19_backend_port' with the port on which your backend server is listening.
-  fetch('http://vgg19_backend_container_ip:vgg19_backend_port/predict_vgg', {
+  fetch('http://10.20.3.140:5001/predict_vgg', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

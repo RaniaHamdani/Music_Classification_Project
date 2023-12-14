@@ -45,7 +45,7 @@ def vgg19_service():
     # (Cela dépend de la manière dont vous formez ou adaptez le modèle à la classification des genres musicaux)
 
     # Envoie de la réponse
-    return jsonify({'genre': 'Genre identifié ici'})
+    return jsonify({'genre': predictions})
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
